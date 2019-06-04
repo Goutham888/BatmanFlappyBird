@@ -10,7 +10,7 @@ class HomeText extends React.Component {
   }
 }
 
-const HomeScreen = ({navigation}) => (
+const Endscreen = ({navigation}) => (
   <ImageBackground
           style={styles.background}
           source={{ uri: 'https://amp.businessinsider.com/images/5b8e6a6804f1621c008b58f9-750-375.jpg' }}
@@ -26,10 +26,10 @@ const HomeScreen = ({navigation}) => (
       <TouchableHighlight
         style={styles.nextButton}
         onPress={() => {
-          navigation.navigate('Second')
+
         }}
       >
-        <HomeText text={'PLAY'}/>
+        <HomeText text={'Really? I did not think it was possible to lose that fast.'}/>
       </TouchableHighlight>
     </View>
     
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
       },
       nextButton: {
             
-    				width: Dimensions.get('window').width/2,	height: 60,
+    				width: Dimensions.get('window').width,	height: 80,
     				borderColor: 'black',
             borderWidth: 3,
             alignItems: 'center',
@@ -75,4 +75,4 @@ const styles = StyleSheet.create({
           alignItems: 'center',
       },
 });
-export default HomeScreen
+export default Endscreen
