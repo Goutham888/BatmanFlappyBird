@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
 	  },
     button: {
           
-  				width: Dimensions.get('window').width,	height: 80,
+  				width: Dimensions.get('window').width,	height: 79,
   				borderColor: 'black',
           borderWidth: 3,
           alignItems: 'center',
